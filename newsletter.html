@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Newsletter Signup</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+        <header>
+			<nav>
+				<ul>
+					<li><a href="main.html"><img src="images/logo.png" alt="logo"></a>
+					<li><a href="main.html">Home</a></li>
+					<li>
+						<a href="#">Animals</a>
+						<ul class="dropdown">
+							<li class="pets"><a href="dogs.html">Dogs</a></li>
+							<li class="pets"><a href="cats.html">Cats</a></li>
+							<li class="pets"><a href="other.html">Other</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="newsletter.html">Newsletter</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</header>
+        <div class="newsletter">
+            <h1>Sign Up for Our Newsletter</h1>
+            <p>Subscribe to our newsletter and stay updated with the latest news about pets!</p>
+            <form id="newsletterForm">
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+            </form>
+            <div id="thankYouMessage" style="display: none;">
+                <p>Thank you for your submission!</p>
+            </div>
+        </div>
+		<script>
+            document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+
+                if (!name || !email) {
+                    alert('Please fill in both your name and email!');
+                    return;
+                }
+
+                document.getElementById('thankYouMessage').style.display = 'block';
+
+                document.getElementById('newsletterForm').style.display = 'none';
+                document.getElementById('newsletterForm').reset();
+            });
+		</script>
+	</body>
+</html>

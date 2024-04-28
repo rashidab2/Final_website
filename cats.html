@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend in Need</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="main.html"><img src="images/logo.png" alt="logo"></a>
+					<li><a href="main.html">Home</a></li>
+					<li>
+						<a href="#">Animals</a>
+						<ul class="dropdown">
+							<li class="pets"><a href="dogs.html">Dogs</a></li>
+							<li class="pets"><a href="cats.html">Cats</a></li>
+							<li class="pets"><a href="other.html">Other</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="newsletter.html">Newsletter</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Cats For Adoption!</h1>
+		<div class = "slider-container">
+			<div class="slider" id="slider1">
+				<div class="slides">
+					<img class="slide" src="images/cat1.jpg" alt="orange tabby on back">
+					<img class="slide" src="images/cat1.2.jpg" alt="orange tabby in play area">
+					<img class="slide" src="images/cat1.3.jpg" alt="orange tabby yelling">
+                    <img class="slide" src="images/cat1.4.jpg" alt="orange tabby looking left">
+				</div>
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+			</div>
+		</div>
+		<div class="textbox">
+			<h2>Sweetie</h2>
+			<p>
+				Hello! My name is Sweetie! I'm an orange tabby cat who loves 
+				to play and mess with you! I love to annoy my siblings, but 
+				I will always wind down at the end of the day!
+			</p>
+		</div>
+		<div class = "slider-container">		
+			<div class="slider" id="slider2">
+				<div class="slides">
+					<img class="slide" src="images/cat2.jpg" alt="black cat laying down looking right">
+					<img class="slide" src="images/cat2.2.jpg" alt="black cat laying down looking left">
+					<img class="slide" src="images/cat2.3.jpg" alt="black cat looking startled">
+                    <img class="slide" src="images/cat2.4.jpg" alt="0.5 image view of black cat">
+				</div>
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+			</div>
+		<div>
+		<div class="textbox">
+			<h2>Gigi</h2>
+			<p>
+				My name is Gigi! I have so much love for everyone! I'm a big 
+				cuddler and I love all kinds of scratches, and will ask for 
+				attention all the time! I am very silly and full of energy! 
+				Please adopt me!
+			</p>
+		</div>
+        <div class = "slider-container">
+			<div class="slider" id="slider3">
+				<div class="slides">
+					<img class="slide" src="images/cat3.jpg" alt="brown tabby looking at camera">
+					<img class="slide" src="images/cat3.2.jpg" alt="brown tabby looking startled with paw up">
+					<img class="slide" src="images/cat3.3.jpg" alt="zoomed in brown tabby laying down">
+                    <img class="slide" src="images/cat3.4.jpg" alt="full body of brown tabby laying down">
+				</div>
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+			</div>
+		</div>
+		<div class="textbox">
+			<h2>Itchy</h2>
+			<p>
+				I'm Itchy! I love to bite and scratch, but I know my limits! I love 
+				to play fight, and I'm always curious to see what you're up to! I get
+				attached to people easily, and I'll be loyal forever!
+			</p>
+		</div>
+        <div class = "slider-container">
+			<div class="slider" id="slider4">
+				<div class="slides">
+					<img class="slide" src="images/cat4.jpg" alt="black cat in sun looking up at camera">
+					<img class="slide" src="images/cat4.2.jpg" alt="black cat on counter">
+					<img class="slide" src="images/cat4.3.jpg" alt="zoomed in black cat">
+				</div>
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+			</div>
+		</div>
+		<div class="textbox">
+			<h2>Bean</h2>
+			<p>
+				My name is Bean! I was found on the streets of Mexico and have
+				been through a lot. I have lots of energy! My favorite activity is
+				to run into walls for no reason. Whenever you are in close proximity 
+				to my treats, I will not stop meowing until you give me some!!!
+
+			</p>
+		</div>
+        <div class = "slider-container" id="slider5">
+			<div class="slider">
+				<div class="slides">
+					<img class="slide" src="images/cat5.jpg" alt="long haired white cat laying down">
+					<img class="slide" src="images/cat5.2.jpg" alt="long haired white cat close up">
+					<img class="slide" src="images/cat5.3.jpg" alt="long haired white cat on a chair">
+                    <img class="slide" src="images/cat5.4.jpg" alt="long haired white cat on a counter">
+				</div>
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+			</div>
+		</div>
+		<div class="textbox">
+			<h2>Fiona</h2>
+			<p>
+				I'm Fiona, I am regal and very photogenic! I love to kep my fur 
+				clean, and I love being scratched on my cheeks. I act uninterested,
+				but will cuddle you when you feel lonely at night. I don't really like 
+				to play, but I will be loyal by your side for as long as you need me!
+			</p>
+		</div>
+        <script src="script1.js"></script>
+
+		<footer>
+			<p id="toTop"><a href="#">Back to Top</a></p>
+			<table id="footerTable">
+				<tr><th>Contact</th><th>Animals</th><th>Other</th>
+				<tr><td><a href="https://twitter.com/hssaz?lang=en"><img src="images/XLogo.png" class="socialMediaImg"></a></td><td><a href="dogs.html">Dogs</a></td><td><a href="about.html">About</a></td></tr>
+				<tr><td><a href="https://www.instagram.com/humanesocietysoaz/?hl=en"><img src="images/InstagramLogo.png" class="socialMediaImg"></a></td><td><a href="cats.html">Cats</a></td><td><a href="newsletter.html">Newsletter</a></td></tr>
+				<tr><td><a href="https://www.facebook.com/hssaz/"><img src="images/FacebookLogo.png" class="socialMediaImg"></a></td><td><a href="other.html">Other</a></td><td><a href="help.html">Help</a></td></tr>
+			</table>
+		</footer>
+	</body>
+</html>

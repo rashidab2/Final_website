@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend in Need - Contact</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="main.html"><img src="images/logo.png" alt="logo"></a></li>
+        <li><a href="main.html">Home</a></li>
+        <li>
+          <a href="#">Animals</a>
+          <ul class="dropdown">
+            <li class="pets"><a href="dogs.html">Dogs</a></li>
+            <li class="pets"><a href="cats.html">Cats</a></li>
+            <li class="pets"><a href="other.html">Other</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contact" class="content">
+    <h1>Contact Us</h1>
+    <p>Have a question or want to learn more about adopting a pet? Fill out the form below and we'll get back to you as soon as possible:</p>
+    <form id="contact-form">
+      <div class="input-group">
+        <label for="name"><strong>Name:</strong></label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="message"><strong>Message:</strong></label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h3>Reach Us By Phone:</h3>
+    <a href ="contact.html">(347) 829-5634</a>
+    <h3>Reach Us By Email:</h3>
+    <a href="mailto:adoptpet@gmail.com" >adoptpet@gmail.com</a>
+  </section>
+
+  <footer>
+    <p id="toTop"><a href="#">Back to Top</a></p>
+    <table id="footerTable">
+        <tr><th>Contact</th><th>Animals</th><th>Other</th>
+        <tr><td><a href="https://twitter.com/hssaz?lang=en"><img src="images/XLogo.png" class="socialMediaImg"></a></td><td><a href="dogs.html">Dogs</a></td><td><a href="about.html">About</a></td></tr>
+        <tr><td><a href="https://www.instagram.com/humanesocietysoaz/?hl=en"><img src="images/InstagramLogo.png" class="socialMediaImg"></a></td><td><a href="cats.html">Cats</a></td><td><a href="newsletter.html">Newsletter</a></td></tr>
+        <tr><td><a href="https://www.facebook.com/hssaz/"><img src="images/FacebookLogo.png" class="socialMediaImg"></a></td><td><a href="other.html">Other</a></td><td><a href="help.html">Help</a></td></tr>
+    </table>
+  </footer>
+</body>
+</html>

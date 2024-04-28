@@ -1,0 +1,282 @@
+/* Main page CSS */
+
+body {
+
+	font-family: "Georgia", "Arial", sans-serif;
+
+}
+
+body {
+	background-color: #99cfff;
+	margin: 5px;
+    color: black; 
+    padding: 10px; 
+	font-size: 20px;
+	margin-right: 5px;
+	margin-left: 7px;
+	min-width: 300px;
+}
+
+.textbox {
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    background-color: white;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+	outline: solid 1px indigo;
+	transition: 0.2s linear;
+	margin: 0.5em;
+	cursor: pointer;
+    border-radius: 25px;
+}
+.textbox:hover {
+	outline-width: 3px;
+}
+
+.content {
+    border-radius: 25px;
+    max-width: 1000px;
+    padding: 5px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    margin:auto;
+
+}
+h2 ul li u{
+	text-align: left;
+}
+
+
+h1{
+    position: relative;
+    margin: auto;
+    color: black;
+	margin-top: 40px;
+	font-size: 60px;
+	text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 200;
+	text-decoration: underline 2px;
+}
+
+h2{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.input-group {
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+/* slider CSS: */
+
+.slider-container{
+    margin: auto;
+    padding: 50px solid lightblue;
+}
+
+.slider {
+    top: 100px;
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    border: 5px solid indigo;
+    max-height: 400px;
+    margin: auto;
+	
+}
+.slider:hover{
+	border-width: 6px;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+/* Header CSS */
+
+ul {
+    list-style-type: none;
+  }
+  
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	white-space: nowrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    padding: 10px; 
+	font-size: 40px;
+	font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #000085; 
+    text-decoration: underline;
+}
+nav ul li a img {
+    width: 150px; 
+    height: auto;
+	position: absolute;
+	left: -35px;
+	top: -20px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+ul li:hover .dropdown {
+    display: block;
+	
+}
+.dropdown .pets a:hover{
+	color: #000085;
+	text-decoration: underline 2px wavy;
+}
+
+
+/* Newsletter */
+
+.newsletter {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    top: 70px;
+    margin:auto;
+    max-width:600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+form {
+    margin-top: 20px;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #004494;
+}
+p{
+    text-align: center;
+}
+
+
+/* Footer */
+#footerTable {
+
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer td, footer th {
+    padding: 10px 20px;
+}
+
+tr td a:hover{
+	color: blue;
+	text-decoration: underline wavy;
+}
+
+
+.socialMediaImg {
+    width: 20px;
+}
+
+#toTop {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-media-links a img{
+	width: 20px;
+	position: relative;
+	padding: 5px;
+	margin: 5px;
+}
+
